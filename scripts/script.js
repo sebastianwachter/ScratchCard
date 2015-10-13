@@ -92,5 +92,9 @@ function getClearedPixels(stride) {
 
 function handlePercentage(clearedPixels) {
   clearedPixels = clearedPixels || 0;
-  console.log('cleared: ' + clearedPixels + '%');
+  //console.log('cleared: ' + clearedPixels + '%');
+
+  if (clearedPixels == 80) {
+    alert(unescape("Hey%21 You%27ve cleared 80%25 of the picture%21"));
+  }
 }
