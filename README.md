@@ -20,5 +20,5 @@ background-image: url('../background.jpg');
 ```
 </li>
 <li>Now it works - PROFIT!</li>
-<ol>
-#### IMPORTANT NOTICE: You need jQuery to get it to work
+</ol>
+#### IMPORTANT NOTICE: You need jQuery to get it to work!
