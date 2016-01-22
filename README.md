@@ -2,7 +2,7 @@
 Basic scratch card implementation for modern browsers.<br/>
 Watch a demo over <a href="http://sebastianwachter.github.io/ScratchCard/">here</a>
 ## How to use it
-<ol>
+#### IMPORTANT NOTICE: You need jQuery to get it to work!
 <li>Clone this repo</li>
 <li>Embed a canvas on your page with a preferred size. For example: <br/>
 ```html
@@ -20,5 +20,3 @@ background-image: url('../background.jpg');
 ```
 </li>
 <li>Now it works - PROFIT!</li>
-</ol>
-#### IMPORTANT NOTICE: You need jQuery to get it to work!
