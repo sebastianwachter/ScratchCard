@@ -9,7 +9,7 @@ Watch a demo over <a href="http://sebastianwachter.github.io/ScratchCard/">here<
 ```html
 <canvas id="myCanvas" width="500" height="500"></canvas>
 ```
-<br/>If you want the script to work automatically you have to set the id to "myCanvas" else you have to change it in the JavaScript file.</li>
+If you want the script to work automatically you have to set the id to "myCanvas" else you have to change it in the JavaScript file.</li>
 <li>Now link the JavaScript file in a script tag on your site like this:<br/>
 ```html
 <script type="text/javascript" src="scripts/script.js"></script>
