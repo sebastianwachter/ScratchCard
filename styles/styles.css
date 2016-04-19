@@ -17,7 +17,6 @@ h3 { font-size: 35px; }
 p { font-size: 20px; margin: 0; transform: translateY(50%); }
 
 #myCanvas {
-  background-image: url('../imgs/hidden.jpg');
   cursor: default;
 }
 

@@ -71,6 +71,7 @@ function reset() {
   ctx.globalCompositeOperation = 'source-over';
   ctx.fillStyle = "rgb(163, 163, 163)";
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+  setRandomImage();
 }
 
 function getClearedPixels(stride) {
@@ -97,4 +98,13 @@ function handlePercentage(clearedPixels) {
   if (clearedPixels == 80) {
     alert(unescape("Hey%21 You%27ve cleared 80%25 of the picture%21"));
   }
+}
+
+$(function () {
+  setRandomImage();
+});
+
+function setRandomImage () {
+  var bgImage = Math.floor(Math.random() * 11);
+  $('#myCanvas').css('background', 'url(../imgs/' + bgImage + '.png');
 }
