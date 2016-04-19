@@ -106,5 +106,5 @@ $(function () {
 
 function setRandomImage () {
   var bgImage = Math.floor(Math.random() * 11);
-  $('#myCanvas').css('background', 'url(./imgs/' + bgImage + '.png');
+  $('#myCanvas').css('background', 'url(/imgs/' + bgImage + '.png');
 }
