@@ -1,5 +1,4 @@
 'use strict';
-/* globals $ */
 var ScratchCard = function (options) {
   var self = this;
   // Set local variables for this instance
