@@ -1,21 +1,17 @@
 # ScratchCard
-Basic scratch card implementation for modern browsers.<br/>
-Watch a demo over <a href="http://sebastianwachter.github.io/ScratchCard/">here</a>
-## How to use it
-#### IMPORTANT NOTICE: You need jQuery to get it to work!
-1. Clone this repo
-2. Embed a canvas on your page with a preferred size. For example:<br/>
-  ```
-  <canvas id="myCanvas" width="500" height="500"></canvas>
-  ```
-  <br/>
-  If you want the script to work automatically you have to set the id to "myCanvas" else you have to change it in the JavaScript file.
-3. Now link the JavaScript file in a script tag on your site like this:
-  ```
-  <script type="text/javascript" src="scripts/script.js"></script>
-  ```
-4. Now add a background image to the canvas via CSS:<br/>
-  ```
-  background-image: url('../background.jpg');
-  ```
-5. Now it works - PROFIT!
+This is a library for turning canvas elements on your web site into "scratchable" objects.
+
+## Prerequisites
+* all canvas elements need to have an ID to select them
+* a browser with a working `.bind()` function
+* no jQuery just plain JavaScript
+
+## Setup
+1. Add the library to your site's head. Use the minified version for production and the unminified version for development.
+```HTML
+<head>
+  <!-- all stuff you are using -->
+  <script type="text/javascript" src="scripts/scratchcard.min.js"></script>
+</head>
+```
+2. Initialize 
