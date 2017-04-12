@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-const-assign": "error",
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "no-unused-vars": "warn",
+    "valid-typeof": "error",
+    "semi-spacing": ["error", {
+        "before": false,
+        "after": true
+    }],
+    "semi": "error",
+    "no-extra-semi": "error",
+    "no-func-assign": "error",
+    "curly": "error",
+    "eqeqeq": "warn",
+    "dot-notation": "error",
+    "no-empty-function": "error",
+    "quotes": ["error", "single"]
+  }
+}

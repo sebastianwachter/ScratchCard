@@ -1,21 +1,65 @@
 # ScratchCard
-Basic scratch card implementation for modern browsers.<br/>
-Watch a demo over <a href="http://sebastianwachter.github.io/ScratchCard/">here</a>
-## How to use it
-#### IMPORTANT NOTICE: You need jQuery to get it to work!
-1. Clone this repo
-2. Embed a canvas on your page with a preferred size. For example:<br/>
-  ```
-  <canvas id="myCanvas" width="500" height="500"></canvas>
-  ```
-  <br/>
-  If you want the script to work automatically you have to set the id to "myCanvas" else you have to change it in the JavaScript file.
-3. Now link the JavaScript file in a script tag on your site like this:
-  ```
-  <script type="text/javascript" src="scripts/script.js"></script>
-  ```
-4. Now add a background image to the canvas via CSS:<br/>
-  ```
-  background-image: url('../background.jpg');
-  ```
-5. Now it works - PROFIT!
+
+This is a library for turning canvas elements on your web site into "scratchable" objects. You can also set a required percentage of space to be revealed for the task to be completed.
+
+## Prerequisites
+
+* canvas elements with background images that need to be hidden
+* all canvas elements need to have an ID to select them
+* a browser with a working `.bind()` function
+* no jQuery just plain JavaScript
+
+## Setup
+
+#### 1. Add the library to your site's head. Use the minified version for production and the unminified version for development.
+
+```HTML
+<head>
+  <!-- all stuff you are using -->
+  <script type="text/javascript" src="scripts/scratchcard.min.js"></script>
+</head>
+```
+
+#### 2. Initialize the scratch card by using a options object.
+
+```JavaScript
+var options = {
+  id: 'yourCanvasID',
+  brushSize: 50,
+  lineJoin: 'round',
+  percentRequired: 80,
+  fillColor: 'rgb(100, 100, 13)'
+};
+```
+
+* `id` is your canvas ID as a string.
+
+* `brushSize` determines how much area the brush should remove as a integer.
+
+* `lineJoin` determines how the lines of the revealed area are going to be joined together. Must be one of `bevel`, `round` or `miter` as a string.
+
+* `percentRequired` determines how much space should be revealed for the success event to be fired. Should be an integer.
+
+* `fillColor` sets the color of the fill that hides the image. This can be all of the CSS color values but has to be put in as a string.
+
+#### 3. Create the new scratch card object and pass the constructor the options object.
+
+```JavaScript
+var yourScratchCard = new ScratchCard(options);
+```
+
+#### 4. If you want you can add an event listener to the success event.
+
+```JavaScript
+scratch.addEventListener('success', function (e) {
+  alert('You can do whatever you want here!');
+}, false);
+```
+
+#### 5. Profit!
+
+## Contributing
+If you find any bugs please open up an issue. If you added any features propose a pull request and I will look into it.
+
+# License
+MIT
