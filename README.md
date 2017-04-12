@@ -33,9 +33,13 @@ var options = {
 ```
 
 `id` is your canvas ID as a string.
+
 `brushSize` determines how much area the brush should remove as a integer.
+
 `lineJoin` determines how the lines of the revealed area are going to be joined together. Must be one of `bevel`, `round` or `miter` as a string.
+
 `percentRequired` determines how much space should be revealed for the success event to be fired. Should be an integer.
+
 `fillColor` sets the color of the fill that hides the image. This can be all of the CSS color values but has to be put in as a string.
 
 3. Create the new scratch card object and pass the constructor the options object.
