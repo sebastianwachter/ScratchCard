@@ -51,7 +51,7 @@ var yourScratchCard = new ScratchCard(options);
 #### 4. If you want you can add an event listener to the success event.
 
 ```JavaScript
-scratch.addEventListener('success', function (e) {
+yourScratchCard.addEventListener('success', function (e) {
   alert('You can do whatever you want here!');
 }, false);
 ```
