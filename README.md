@@ -11,7 +11,7 @@ This is a library for turning canvas elements on your web site into "scratchable
 
 ## Setup
 
-1. Add the library to your site's head. Use the minified version for production and the unminified version for development.
+#### 1. Add the library to your site's head. Use the minified version for production and the unminified version for development.
 
 ```HTML
 <head>
@@ -20,7 +20,7 @@ This is a library for turning canvas elements on your web site into "scratchable
 </head>
 ```
 
-2. Initialize the scratch card by using a options object.
+#### 2. Initialize the scratch card by using a options object.
 
 ```JavaScript
 var options = {
@@ -32,23 +32,23 @@ var options = {
 };
 ```
 
-`id` is your canvas ID as a string.
+* `id` is your canvas ID as a string.
 
-`brushSize` determines how much area the brush should remove as a integer.
+* `brushSize` determines how much area the brush should remove as a integer.
 
-`lineJoin` determines how the lines of the revealed area are going to be joined together. Must be one of `bevel`, `round` or `miter` as a string.
+* `lineJoin` determines how the lines of the revealed area are going to be joined together. Must be one of `bevel`, `round` or `miter` as a string.
 
-`percentRequired` determines how much space should be revealed for the success event to be fired. Should be an integer.
+* `percentRequired` determines how much space should be revealed for the success event to be fired. Should be an integer.
 
-`fillColor` sets the color of the fill that hides the image. This can be all of the CSS color values but has to be put in as a string.
+* `fillColor` sets the color of the fill that hides the image. This can be all of the CSS color values but has to be put in as a string.
 
-3. Create the new scratch card object and pass the constructor the options object.
+#### 3. Create the new scratch card object and pass the constructor the options object.
 
 ```JavaScript
 var yourScratchCard = new ScratchCard(options);
 ```
 
-4. If you want you can add an event listener to the success event.
+#### 4. If you want you can add an event listener to the success event.
 
 ```JavaScript
 scratch.addEventListener('success', function (e) {
@@ -56,10 +56,10 @@ scratch.addEventListener('success', function (e) {
 }, false);
 ```
 
-5. Profit!
+#### 5. Profit!
 
 ## Contributing
-If you find any bugs or propose features open up a issue or propose a pull request.
+If you find any bugs please open up an issue. If you added any features propose a pull request and I will look into it.
 
 # License
 MIT
