@@ -18,6 +18,7 @@ p { font-size: 20px; margin: 0; transform: translateY(50%); }
 
 #myCanvas {
   cursor: default;
+  background-image: url('../imgs/8.png');
 }
 
 .button {
