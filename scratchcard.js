@@ -137,7 +137,7 @@ ScratchCard.prototype.calcPixels = function (stride) {
 };
 
 ScratchCard.prototype.clearPercentage = function (clearedAmount) {
-  if (clearedAmount === this.clearRequirement) {
+  if ((clearedAmount === this.clearRequirement) || (clearedAmount > this.clearRequirement)) {
     var successEvent = new Event('success');
     this.can.dispatchEvent(successEvent);
   }
